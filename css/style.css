@@ -137,6 +137,7 @@ ul,li{
     padding-right: 4px;
     float: left;
     min-height: 1px;
+    box-sizing: border-box;
 }
 .fui-col-7{
     width: 58.33333333%;
@@ -240,7 +241,8 @@ ul,li{
     z-index: 1;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: #3490DE;
+    background: url("../img/tmp_bg.png") repeat-y;
+    background-size: 100% auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -285,6 +287,10 @@ ul,li{
     position: relative;
     top: 0;
 }
+.weui-header .header-left .address{
+    font-size: 0.7rem;
+    color: #fff;
+}
 .weui-header .title{
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -324,6 +330,16 @@ ul,li{
 .weui-content.navbar{
     top: 2.2rem;
 }
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
+    color: #999;
+}
+.swiper-pagination-bullet{
+    background: #fafafa;
+}
+.swiper-pagination-bullet-active{
+    background: #fafafa;
+}
+
 
 .load-page .weui-page-current{
     background: url("../img/reslog_bg.png") no-repeat 0 0;
@@ -487,3 +503,63 @@ ul,li{
     padding:0 10px;
     margin-top: 20px;
 }
+
+.fui-goods-group{
+    height: auto;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+.fui-goods-group .fui-goods-item {
+    border-bottom: 1px solid #eee;
+    background: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.fui-goods-group .fui-goods-item .image {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding-bottom: 65%;
+    position: relative;
+}
+.fui-goods-group .fui-goods-item .image .goods_label{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 1rem;
+    color: #fff;
+    padding: 0 0.5rem;
+}
+.fui-goods-group .fui-goods-item .image .goods_label label{
+    width: 1.4rem;
+    height:1.3rem;
+    padding: 1px;
+    font-size: 0.5rem;
+    text-align: center;
+    display: inline-block;
+    background: url("/mobile/images/goods_label_ico.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-right: 0.2rem;
+}
+.fui-goods-group .fui-goods-item .detail{
+    padding-bottom: 0.3rem;
+}
+.fui-goods-group .fui-goods-item .detail .name {
+    height: 0.8rem;
+    color: #666;
+    margin: 0.5rem 0 0rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 0.65rem;
+    line-height: 0.9rem;
+}
+.fui-goods-group .fui-goods-item .detail .price{
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+}
+

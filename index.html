@@ -22,15 +22,150 @@
         <div class="weui-page weui-page-current">
             <header class="weui-header">
                 <div class="header-left">
-                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                    <span class="address"><i class="icon"></i>厦门</span>
                 </div>
-                <div class="title">会员中心</div>
-                <div class="header-right"></div>
+                <div class="title">首页</div>
+                <div class="header-right">
+                    <a href=""><i class="icon"></i></a>
+                </div>
             </header>
             <div class="weui-content navbar">
-                <!--页面内容-->
+                <!--banner-->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/sliderBanner/banner1.jpg" width="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sliderBanner/banner1.jpg" width="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sliderBanner/banner1.jpg" width="100%">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="weui-flex">
+                    <div class="weui-flex__item">
+                        <div class="imgBox"><i class="icon"></i></div>
+                        <div class="text">2万拼15万</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="imgBox"><i class="icon"></i></div>
+                        <div class="text">4万拼30万</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="imgBox"><i class="icon"></i></div>
+                        <div class="text">6万拼45万</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="imgBox"><i class="icon"></i></div>
+                        <div class="text">8万拼60万</div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div class="title"><i class="icon"></i>系统推荐</div>
+                    <div class="fui-goods-group fui-row">
+                        <div class="fui-col-6">
+                            <div class="fui-goods-item">
+                                <a href="">
+                                    <div class="image">
+                                        <img src="img/car.jpg" width="100%">
+                                    </div>
+                                </a>
+                                <div class="detail">
+                                    <a href="">
+                                        <div class="name">2017款美国进口林肯MKC尊享版+加装360</div>
+                                    </a>
+                                    <div class="price">
+                                        <span class="text">2万购车款</span>
+                                        <div class="total">指导价：<span>36.1万</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fui-col-6 ">
+                            <div class="fui-goods-item">
+                                <a href="">
+                                    <div class="image">
+                                        <img src="img/car.jpg" width="100%">
+                                    </div>
+                                </a>
+                                <div class="detail">
+                                    <a href="">
+                                        <div class="name">2017款美国进口林肯MKC尊享版+加装360</div>
+                                    </a>
+                                    <div class="price">
+                                        <span class="text">2万购车款</span>
+                                        <div class="total">指导价：<span>36.1万</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fui-col-6 ">
+                            <div class="fui-goods-item">
+                                <a href="">
+                                    <div class="image">
+                                        <img src="img/car.jpg" width="100%">
+                                    </div>
+                                </a>
+                                <div class="detail">
+                                    <a href="">
+                                        <div class="name">2017款美国进口林肯MKC尊享版+加装360</div>
+                                    </a>
+                                    <div class="price">
+                                        <span class="text">2万购车款</span>
+                                        <div class="total">指导价：<span>36.1万</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--底部导航-->
+            <div class="weui-tabbar">
+                <a href="javascript:;" class="weui-tabbar__item weui-bar__item--on">
+                    <div class="weui-tabbar__icon">
+                        <img src="./images/icon_nav_button.png" alt="">
+                    </div>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon">
+                        <img src="./images/icon_nav_msg.png" alt="">
+                    </div>
+                    <p class="weui-tabbar__label">拼车介绍</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon">
+                        <img src="./images/icon_nav_article.png" alt="">
+                    </div>
+                    <p class="weui-tabbar__label">立即购车</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon">
+                        <img src="./images/icon_nav_cell.png" alt="">
+                    </div>
+                    <p class="weui-tabbar__label">帮助说明</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon">
+                        <img src="./images/icon_nav_cell.png" alt="">
+                    </div>
+                    <p class="weui-tabbar__label">个人中心</p>
+                </a>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".swiper-container").swiper({
+                loop: true,
+                autoplay: 3000
+            });
+        })
+    </script>
 </body>
 </html>
