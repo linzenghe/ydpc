@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group category-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">商品分类</div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="fui-fullHigh-group category-panel">
+
+                    <div class="fui-fullHigh-item menu" id="tab">
+                        <nav data-id="0" class="on">全部商品</nav>
+                        <nav data-id="1">宝马专区</nav>
+                        <nav data-id="2">路虎专区</nav>
+                        <nav data-id="3">大众专区</nav>
+                        <nav data-id="4">两万专区</nav>
+                        <nav data-id="5">四万专区</nav>
+                        <nav data-id="6">六万专区</nav>
+                        <nav data-id="7">八万专区</nav>
+                    </div>
+                    <div class="fui-fullHigh-item container" style="position: relative">
+                        <div id="cateContainer">
+                            <div class="weui-search-bar" id="searchBar">
+                                <form class="weui-search-bar__form">
+                                    <div class="weui-search-bar__box">
+                                        <i class="ydpc icon-ic_search_px"></i>
+                                        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                                    </div>
+                                    <label class="weui-search-bar__label" id="searchText">
+                                        <i class="ydpc icon-ic_search_px"></i>
+                                        <span>搜索</span>
+                                    </label>
+                                </form>
+                                <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+                            </div>
+                            <div class="sort-wrap clearfix">
+                                <div class="item text-center sort_pop fui-col-6" data-pop="0">
+                                    <span class="text">人气<i class="ydpc icon-arrow-up" style="font-size: 12px;margin-left: 4px"></i></span>
+                                </div>
+                                <div class="item text-center sort_add fui-col-6" data-add="1">
+                                    <span class="text"><i class="ydpc icon-ic_location_on_px" style="font-size: 14px;margin-right: 4px"></i><span>厦门</span></span>
+                                    <ul class="drop_address hide">
+                                        <li>厦门</li>
+                                        <li>北京</li>
+                                        <li>上海</li>
+                                        <li>广东</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="categoryItem">
+                                <div class="fui-goods-group fui-row">
+                                    <div class="fui-col-6">
+                                        <div class="fui-goods-item">
+                                            <a href="">
+                                                <div class="image">
+                                                    <img src="img/car.jpg" width="100%">
+                                                </div>
+                                            </a>
+                                            <div class="detail">
+                                                <a href="">
+                                                    <div class="name">2017款美国进口林肯MKC尊享版+加装360</div>
+                                                </a>
+                                                <div class="price">
+                                                    <span class="text">2万购车款</span>
+                                                    <div class=" total"><button class="ydpc_btn">指导价：<span class="text_red">36.1万</span></button></div>
+                                                    <p class="tip">点击查看详情</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fui-col-6 ">
+                                        <div class="fui-goods-item">
+                                            <a href="">
+                                                <div class="image">
+                                                    <img src="img/car.jpg" width="100%">
+                                                </div>
+                                            </a>
+                                            <div class="detail">
+                                                <a href="">
+                                                    <div class="name">2017款美国进口林肯MKC尊享版+加装360</div>
+                                                </a>
+                                                <div class="price">
+                                                    <span class="text">2万购车款</span>
+                                                    <div class=" total"><button class="ydpc_btn">指导价：<span class="text_red">36.1万</span></button></div>
+                                                    <p class="tip">点击查看详情</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text-center hide">
+                                <img src="img/none.png" width="60%" style="max-width: 300px;">
+                                <p style="color: #999">没有查询到商品~</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--底部导航-->
+            <div class="weui-tabbar">
+                <a href="javascript:;" class="weui-tabbar__item home "><!--weui-bar__item--on 选中-->
+                    <div class="weui-tabbar__icon">
+                        <span></span>
+                    </div>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item intro weui-bar__item--on">
+                    <div class="weui-tabbar__icon">
+                        <span></span>
+                    </div>
+                    <p class="weui-tabbar__label">拼车介绍</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item buy ">
+                    <div class="weui-tabbar__icon">
+                        <span></span>
+                    </div>
+                    <p class="weui-tabbar__label">立即购车</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item help">
+                    <div class="weui-tabbar__icon">
+                        <span></span>
+                    </div>
+                    <p class="weui-tabbar__label">帮助说明</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item center">
+                    <div class="weui-tabbar__icon">
+                        <span></span>
+                    </div>
+                    <p class="weui-tabbar__label">个人中心</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            /*菜单点击效果*/
+            $('.category-panel .menu nav').on('click',function () {
+                $(this).addClass('on').siblings().removeClass('on');
+            });
+
+            /*菜单点击效果*/
+            $('.sort_pop').on('click',function () {
+                var status=$(this).data('pop');
+                if(status==0){
+                    $(this).find('.ydpc').removeClass('icon-arrow-up').addClass('icon-arrow-down');
+                    $(this).data('pop','1');
+                }else{
+                    $(this).find('.ydpc').removeClass('icon-arrow-down').addClass('icon-arrow-up');
+                    $(this).data('pop','0');
+                }
+            })
+
+            $('.sort_add').on('click',function (e) {
+                e.stopPropagation();
+                $(this).find('.drop_address').toggleClass('hide');
+            });
+            $(".drop_address li").on('click',function (e) {
+                var add=$(this).text();
+                $('.sort_add .text span').text(add);
+            });
+            $(document.body).on('click',function () {
+                $(".drop_address").addClass('hide');
+            })
+        })
+    </script>
+</body>
+</html>
