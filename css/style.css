@@ -25,8 +25,11 @@ body{
     font-family:-apple-system-font, "Helvetica Neue", sans-serif;
 }
 *{
+    box-sizing: border-box;
     margin:0;
     padding:0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 a img{
     border:0;
@@ -192,6 +195,9 @@ ul,li{
 .bg_orange{
     background-color: #fc6f66;
 }
+.bg_orange{
+    background-color: #fc6f66;
+}
 .bg_pink{
     background-color: #fd73a0;
 }
@@ -214,8 +220,22 @@ ul,li{
     background-color: #39e7b9;
 }
 
+.text_red{
+    color: #e11b1b;
+}
 
-
+.ydpc_btn{
+    height: 30px;
+    line-height: 30px;
+    background: url("../img/button_bg.png") repeat-x 0 0;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    border: none;
+}
 
 .weui-page,.weui-page-group{
     position: absolute;
@@ -238,7 +258,7 @@ ul,li{
     position: absolute;
     top: 0;
     margin: 0;
-    z-index: 1;
+    z-index: 2;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: url("../img/tmp_bg.png") repeat-y;
@@ -262,6 +282,7 @@ ul,li{
     line-height: 2.2rem;
     height: 2.2rem;
     z-index:2;
+    position: relative;
 }
 .weui-header .header-left a{
     height: 2.2rem;
@@ -290,6 +311,38 @@ ul,li{
 .weui-header .header-left .address{
     font-size: 0.7rem;
     color: #fff;
+    cursor: pointer;
+}
+.weui-header .header-left .address i{
+    margin: 0 8px 0px 4px;
+}
+.weui-header .header-left .drop_address{
+    position: absolute;
+    top: 2.4rem;
+    left: 4px;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    z-index: 1000;
+    width: 60px;
+    border-radius:6px;
+}
+.weui-header .header-left .drop_address:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(0,0,0,.6);
+}
+.weui-header .header-left .drop_address li{
+    font-size: 0.7rem;
+    line-height: 1rem;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
 }
 .weui-header .title{
     white-space: nowrap;
@@ -315,6 +368,13 @@ ul,li{
     line-height: 2.2rem;
     z-index: 2;
     font-size: .7rem;
+}
+.weui-header .header-right .search{
+    margin-right: 4px;
+}
+.weui-header .header-right .search .ydpc{
+    color: #fff;
+    font-size: 0.9rem;
 }
 .weui-content{
     bottom: 0;
@@ -493,6 +553,14 @@ ul,li{
 .register-page .form .item_submit{
     margin-top: 20px;
 }
+.register-page .form .item_forget{
+    margin-top: 5px;
+}
+.register-page .form .item_forget a{
+    font-size: 0.6rem;
+    color: #fff;
+    text-decoration: underline;
+}
 .register-page .form .weui-btn-submit{
     background-color: rgba(51,51,51,0.6);
     font-size: 0.7rem;
@@ -504,16 +572,86 @@ ul,li{
     margin-top: 20px;
 }
 
+/*底部导航*/
+.weui-tabbar .weui-tabbar__icon span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bottombar.png") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.weui-tabbar .home .weui-tabbar__icon span{
+    background-position: 0 -47px;
+}
+.weui-tabbar .intro .weui-tabbar__icon span{
+    background-position: 0 -140px;
+}
+.weui-tabbar .buy .weui-tabbar__icon span{
+    background-position: 0 -234px;
+}
+.weui-tabbar .help .weui-tabbar__icon span{
+    background-position: 0 -327px;
+}
+.weui-tabbar .center .weui-tabbar__icon span{
+    background-position: 0 -421px;
+}
+
+.weui-tabbar .home.weui-bar__item--on .weui-tabbar__icon span{
+    background-position: 0 0px;
+}
+.weui-tabbar .intro.weui-bar__item--on .weui-tabbar__icon span{
+    background-position: 0 -92px;
+}
+.weui-tabbar .buy.weui-bar__item--on .weui-tabbar__icon span{
+    background-position: 0 -187px;
+}
+.weui-tabbar .help.weui-bar__item--on .weui-tabbar__icon span{
+    background-position: 0 -280px;
+}
+.weui-tabbar .center.weui-bar__item--on .weui-tabbar__icon span{
+    background-position: 0 -374px
+}
+/*首页*/
+.center-page .swiper-container{
+    line-height: 0;
+}
+.center-page .flex_nav{
+    background: #fff;
+    padding: 8px 4px;
+}
+.center-page .flex_nav .weui-flex__item{
+    padding: 4px;
+}
+.center-page .flex_nav .weui-flex__item .imgBox{
+    width: 60px;
+    display: inline-block;
+}
+
+.center-page .flex_nav .weui-flex__item .text{
+    font-size: 0.5rem;
+}
+.center-page .recommend .title{
+    background: #fff;
+    margin-top: 6px;
+    padding: 10px 8px;
+    font-size: 0.8rem;
+    color: #333;
+}
 .fui-goods-group{
     height: auto;
     overflow: hidden;
     background: #f9f9f9;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .fui-goods-group .fui-goods-item {
-    border-bottom: 1px solid #eee;
+    border: 1px solid #eee;
     background: none;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .fui-goods-group .fui-goods-item .image {
     width: 100%;
@@ -539,27 +677,35 @@ ul,li{
     font-size: 0.5rem;
     text-align: center;
     display: inline-block;
-    background: url("/mobile/images/goods_label_ico.png") no-repeat 0 0;
     background-size: 100% 100%;
     margin-right: 0.2rem;
 }
 .fui-goods-group .fui-goods-item .detail{
-    padding-bottom: 0.3rem;
+    padding: 0 4px 0.3rem;
+
 }
 .fui-goods-group .fui-goods-item .detail .name {
-    height: 0.8rem;
-    color: #666;
-    margin: 0.5rem 0 0rem;
+    color: #333;
+    margin: 0.3rem 0 0rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     line-height: 0.9rem;
 }
-.fui-goods-group .fui-goods-item .detail .price{
-    font-size: 0.7rem;
-    margin-top: 0.2rem;
+.fui-goods-group .fui-goods-item .detail .price .text{
+    font-size: 0.6rem;
+    color: #e11b1b;
+}
+.fui-goods-group .fui-goods-item .detail .price .total{
+    padding:0 16px;
+    margin-top: 8px;
+}
+.fui-goods-group .fui-goods-item .detail .price .tip{
+    font-size: 0.4rem;
+    color: #999;
+    text-align: center;
 }
 
