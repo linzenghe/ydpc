@@ -23,11 +23,17 @@
         <div class="weui-page weui-page-current">
             <header class="weui-header">
                 <div class="header-left">
-                    <span class="address"><i class="icon"></i>厦门</span>
+                    <span class="address"><i class="ydpc icon-ic_location_on_px"></i><span>厦门</span></span>
+                    <ul class="drop_address hide">
+                        <li>厦门</li>
+                        <li>北京</li>
+                        <li>上海</li>
+                        <li>广东</li>
+                    </ul>
                 </div>
                 <div class="title">首页</div>
                 <div class="header-right">
-                    <a href=""><i class="icon"></i></a>
+                    <a href="" class="search"><i class="ydpc icon-ic_search_px"></i></a>
                 </div>
             </header>
             <div class="weui-content navbar">
@@ -47,26 +53,26 @@
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="weui-flex">
-                    <div class="weui-flex__item">
-                        <div class="imgBox"><i class="icon"></i></div>
+                <div class="weui-flex flex_nav">
+                    <div class="weui-flex__item text-center">
+                        <div class="imgBox"><img src="img/home_button_15w.svg"></div>
                         <div class="text">2万拼15万</div>
                     </div>
-                    <div class="weui-flex__item">
-                        <div class="imgBox"><i class="icon"></i></div>
+                    <div class="weui-flex__item text-center">
+                        <div class="imgBox"><img src="img/home_button_30w.svg"></div>
                         <div class="text">4万拼30万</div>
                     </div>
-                    <div class="weui-flex__item">
-                        <div class="imgBox"><i class="icon"></i></div>
+                    <div class="weui-flex__item text-center">
+                        <div class="imgBox"><img src="img/home_button_45w.svg"></div>
                         <div class="text">6万拼45万</div>
                     </div>
-                    <div class="weui-flex__item">
-                        <div class="imgBox"><i class="icon"></i></div>
+                    <div class="weui-flex__item text-center">
+                        <div class="imgBox"><img src="img/home_button_60w.svg"></div>
                         <div class="text">8万拼60万</div>
                     </div>
                 </div>
                 <div class="recommend">
-                    <div class="title"><i class="icon"></i>系统推荐</div>
+                    <div class="title"><i class="ydpc icon-ic_whatshot_px"></i>系统推荐</div>
                     <div class="fui-goods-group fui-row">
                         <div class="fui-col-6">
                             <div class="fui-goods-item">
@@ -81,7 +87,8 @@
                                     </a>
                                     <div class="price">
                                         <span class="text">2万购车款</span>
-                                        <div class="total">指导价：<span>36.1万</span></div>
+                                        <div class=" total"><button class="ydpc_btn">指导价：<span class="text_red">36.1万</span></button></div>
+                                        <p class="tip">点击查看详情</p>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +106,8 @@
                                     </a>
                                     <div class="price">
                                         <span class="text">2万购车款</span>
-                                        <div class="total">指导价：<span>36.1万</span></div>
+                                        <div class=" total"><button class="ydpc_btn">指导价：<span class="text_red">36.1万</span></button></div>
+                                        <p class="tip">点击查看详情</p>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +125,8 @@
                                     </a>
                                     <div class="price">
                                         <span class="text">2万购车款</span>
-                                        <div class="total">指导价：<span>36.1万</span></div>
+                                        <div class=" total"><button class="ydpc_btn">指导价：<span class="text_red">36.1万</span></button></div>
+                                        <p class="tip">点击查看详情</p>
                                     </div>
                                 </div>
                             </div>
@@ -127,33 +136,33 @@
             </div>
             <!--底部导航-->
             <div class="weui-tabbar">
-                <a href="javascript:;" class="weui-tabbar__item weui-bar__item--on">
+                <a href="javascript:;" class="weui-tabbar__item home weui-bar__item--on">
                     <div class="weui-tabbar__icon">
-                        <img src="./images/icon_nav_button.png" alt="">
+                        <span></span>
                     </div>
                     <p class="weui-tabbar__label">首页</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="javascript:;" class="weui-tabbar__item intro ">
                     <div class="weui-tabbar__icon">
-                        <img src="./images/icon_nav_msg.png" alt="">
+                        <span></span>
                     </div>
                     <p class="weui-tabbar__label">拼车介绍</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="javascript:;" class="weui-tabbar__item buy ">
                     <div class="weui-tabbar__icon">
-                        <img src="./images/icon_nav_article.png" alt="">
+                        <span></span>
                     </div>
                     <p class="weui-tabbar__label">立即购车</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="javascript:;" class="weui-tabbar__item help">
                     <div class="weui-tabbar__icon">
-                        <img src="./images/icon_nav_cell.png" alt="">
+                        <span></span>
                     </div>
                     <p class="weui-tabbar__label">帮助说明</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="javascript:;" class="weui-tabbar__item center">
                     <div class="weui-tabbar__icon">
-                        <img src="./images/icon_nav_cell.png" alt="">
+                        <span></span>
                     </div>
                     <p class="weui-tabbar__label">个人中心</p>
                 </a>
@@ -166,6 +175,18 @@
                 loop: true,
                 autoplay: 3000
             });
+
+            $(".address").on('click',function (e) {
+                e.stopPropagation();
+                $(this).next().toggleClass('hide');
+            });
+            $(".drop_address li").on('click',function (e) {
+                var add=$(this).text();
+                $('.address span').text(add);
+            });
+            $(document.body).on('click',function () {
+                $(".drop_address").addClass('hide');
+            })
         })
     </script>
 </body>
