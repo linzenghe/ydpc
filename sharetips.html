@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group share-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">分享说明</div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="share_text">
+                    <p>技术正以前所未有的速度改变着我们的生活。我们滑动屏幕便可以享用佳肴，点击屏幕便可以轻松出行，单击鼠标便可以选购服装。我们戴上 VR 眼镜便可以看到遥远的世界，我们用手指创作杰作，用视频重温美好的回忆。</p>
+                    <p>Adobe 就在那里 - 事实上，我们位于您可能未曾料到的地方。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.openAgree').on('click',function () {
+                $("#payAgree").popup();
+            });
+        })
+    </script>
+</body>
+</html>

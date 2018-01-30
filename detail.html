@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group detail-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">商品详情</div>
+            </header>
+            <div class="weui-content navbar">
+                <!--轮播-->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/sliderBanner/banner1.jpg" width="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sliderBanner/banner1.jpg" width="100%">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/sliderBanner/banner1.jpg" width="100%">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!--商品信息-->
+                <div class="fui-cell-group fui-detail-group">
+                    <div class="fui-cell">
+                        <div class="fui-cell-text name">2017款美国进口林肯MKC尊享版+加装360全视角记录仪</div>
+                    </div>
+                    <div class="fui-cell goods-subtitle">
+                        <span>2万元购车款</span>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-text flex">
+                            <span>快递：包邮<small style="color: #999;margin-left: 0.5rem">(部分地区除外)</small></span>
+                            <span>销量： 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_paybar">
+                <div class="payBtn ydPay text-center">支付意向金：￥<span>5000</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".swiper-container").swiper({
+                loop: true,
+                autoplay: 3000
+            });
+        })
+    </script>
+</body>
+</html>

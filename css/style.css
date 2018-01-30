@@ -37,7 +37,7 @@ a img{
 a{
     text-decoration:none;
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-    color: #3490DE;
+    color: #108EE9;
 }
 ul,li{
     list-style: none;
@@ -889,4 +889,93 @@ ul,li{
 }
 .category-page .fui-goods-group .fui-goods-item .detail .price .total .ydpc_btn{
     font-size: 0.6rem;
+}
+
+/*支付意向金*/
+.pay-page .pay_panel{
+    background: url("../img/tmp_bg.png") repeat-y 0 0;
+    background-size:100% 100%;
+    padding: 16px 0;
+}
+.pay-page .pay_panel img{
+    width: 50%;
+    max-width: 250px;
+}
+.pay-page .pay_panel .goods_title{
+    color: #fff;
+    font-size: 0.8rem;
+}
+.pay-page .pay_panel .goods_sum{
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.pay-page .pay_agree .weui-cell__bd p{
+    font-size: 0.7rem;
+}
+.weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before{
+    color: #10DF09;
+}
+.weui-cells_checkbox .weui-icon-checked:before{
+    font-size: 0.8rem;
+}
+.weui_paybar{
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    width: 100%;
+}
+.weui_paybar .payBtn{
+    margin-bottom: 4px;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+}
+.weui_paybar .payBtn.aliPay{
+    background: #01A7FD;
+}
+.weui_paybar .payBtn.wechatPay{
+    background: #62B900;
+}
+.weui_paybar .payBtn.ydPay{
+    background: url("../img/button_bg.png") repeat-x 0 0;
+    background-size: auto 100%;
+}
+.weui_paybar .payBtn:last-child{
+    margin-bottom: 0;
+}
+#payAgree{
+    z-index:1000;
+}
+#payAgree .weui-popup__modal{
+    padding: 16px;
+}
+#payAgree .weui-popup__modal article h5{
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+#payAgree .weui-popup__modal article p{
+    font-size: 0.7rem;
+    text-indent: 1.4rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+#payAgree .weui-popup__modal .ydpc_btn{
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+/*分享说明*/
+.share-page .share_text{
+    padding: 25px 16px;
+}
+.share-page .share_text p{
+    font-size: 0.7rem;
+    text-indent: 1.4rem;
+    color: #999;
+    line-height: 1.4rem;
 }
