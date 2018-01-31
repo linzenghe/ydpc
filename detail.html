@@ -50,12 +50,74 @@
                         <div class="fui-cell-text name">2017款美国进口林肯MKC尊享版+加装360全视角记录仪</div>
                     </div>
                     <div class="fui-cell goods-subtitle">
-                        <span>2万元购车款</span>
+                        <span class="text_red">2万元购车款</span>
                     </div>
-                    <div class="fui-cell">
-                        <div class="fui-cell-text flex">
-                            <span>快递：包邮<small style="color: #999;margin-left: 0.5rem">(部分地区除外)</small></span>
-                            <span>销量： 10</span>
+                    <div class="fui-cell goods_sum">
+                        <div class="fui-cell-text">
+                            <span>指导价：<span class="text_red">￥360000</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fui-cell-group fui-detail-tab">
+                    <div class="fui-tab">
+                        <a data-tab="tab1" class="tab active">拼车介绍</a>
+                        <a data-tab="tab2" class="tab">来访记录</a>
+                        <a data-tab="tab3" class="tab">交易记录</a>
+                    </div>
+                    <div class="fui-tab-content intro on" id="tab1">
+                        <div class="fui-cell-group intImg text-center">
+                            <i class="ydpc icon-Group2"></i>
+                        </div>
+                        <div class="fui-cell-group detail">
+                            <div class="title">图文详情</div>
+                            <div class="content-images text-center">
+                                <i class="ydpc icon-Group2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fui-tab-content visitRecord" id="tab2">
+                        <div class="fui-cell-group">
+                            <div class="fui-cell">
+                                <div class="fui-cell-text">
+                                    <span class="name">被邀请人昵称</span><br>
+                                    <span class="phone">181****1111</span>
+                                </div>
+                                <div class="fui-cell-remark">
+                                    <span>2018-1-8 22:10</span>
+                                </div>
+                            </div>
+                            <div class="fui-cell">
+                                <div class="fui-cell-text">
+                                    <span class="name">被邀请人昵称</span><br>
+                                    <span class="phone">181****1111</span>
+                                </div>
+                                <div class="fui-cell-remark">
+                                    <span>2018-1-8 22:10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fui-tab-content transRecord" id="tab3">
+                        <div class="fui-cell-group">
+                            <div class="fui-cell">
+                                <div class="fui-cell-text">
+                                    <span class="name">购买人昵称</span><br>
+                                    <span class="phone">181****1111</span>
+                                </div>
+                                <div class="fui-cell-remark">
+                                    <span>2018-1-8 22:10</span>
+                                </div>
+                            </div>
+                            <div class="fui-cell">
+                                <div class="fui-cell-text">
+                                    <span class="name">购买人昵称</span><br>
+                                    <span class="phone">181****1111</span>
+                                </div>
+                                <div class="fui-cell-remark">
+                                    <span>2018-1-8 22:10</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,6 +134,16 @@
                 loop: true,
                 autoplay: 3000
             });
+
+            /**/
+            $('.fui-detail-tab .tab').on('click',function () {
+                var tabId=$(this).data('tab');
+                $(this).addClass('active').siblings().removeClass('active');
+                $('#'+tabId).addClass('on').siblings().removeClass('on');
+            });
+
+
+
         })
     </script>
 </body>

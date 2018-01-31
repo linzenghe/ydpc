@@ -612,7 +612,7 @@ ul,li{
     background-position: 0 -374px
 }
 /*首页*/
-.center-page .swiper-container{
+ .swiper-container{
     line-height: 0;
 }
 .center-page .flex_nav{
@@ -939,8 +939,8 @@ ul,li{
     background: #62B900;
 }
 .weui_paybar .payBtn.ydPay{
-    background: url("../img/button_bg.png") repeat-x 0 0;
-    background-size: auto 100%;
+    background: url("../img/tmp_bg.png") repeat-y 0 0;
+    background-size: 100 100%;
 }
 .weui_paybar .payBtn:last-child{
     margin-bottom: 0;
@@ -978,4 +978,179 @@ ul,li{
     text-indent: 1.4rem;
     color: #999;
     line-height: 1.4rem;
+}
+
+/*商品详情*/
+.fui-cell-group{
+    margin-top: 0.3rem;
+    background-color: #fff;
+    line-height: 1.4;
+    font-size: 0.8rem;
+    overflow: hidden;
+    position: relative;
+}
+.fui-cell-group .fui-cell{
+    position: relative;
+    padding: 0.75rem 0.5rem 0.65rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    line-height: 1;
+}
+.fui-cell-group .fui-cell:before{
+    content: " ";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: -1px;
+    height: 1px;
+    border-top: 1px solid #ebebeb;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.fui-cell-group .fui-cell .fui-cell-text{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #000;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+.fui-cell-group .fui-cell .fui-cell-remark{
+    color: #999;
+    text-align: right;
+    font-size: 0.65rem;
+    margin-right: .2rem;
+    line-height: 0.65rem;
+}
+
+.fui-detail-group .fui-cell{
+    padding: 0 0.5rem;
+}
+.fui-detail-group .fui-cell:before{
+    display: none;
+}
+.detail-page .fui-detail-group{
+    margin-top: 0;
+}
+.detail-page .fui-detail-group .fui-cell .name{
+    padding: 0.4rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #000;
+}
+.detail-page .goods-subtitle span{
+    font-size: .7rem;
+    padding: .5rem 0 0.2rem;
+    line-height: 0.9rem;
+}
+.detail-page .fui-detail-group .goods_sum{
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+.detail-page .fui-detail-group .goods_sum .fui-cell-text>span{
+    color: #999;
+    font-size: 0.7rem;
+}
+.detail-page .fui-detail-group .goods_sum .fui-cell-text .text_red{
+    font-size: 1rem;
+}
+.fui-detail-tab{
+    background: none;
+}
+.fui-tab{
+    background: #fff;
+    position: relative;
+    -webkit-align-self: center;
+    align-self: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-bottom: 0rem;
+}
+.fui-tab a{
+    text-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    color: #333;
+    font-size: 0.75rem;
+    width: 100%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+.fui-tab a.active{
+    border-bottom-color: #000;
+    font-size: 0.75rem;
+}
+.fui-tab-content{
+    display: none;
+}
+.fui-tab-content.on{
+    display: block;
+}
+.fui-tab-content .fui-cell-group.intImg{
+    margin-top: 0;
+}
+.fui-tab-content .fui-cell-group.intImg i{
+    font-size: 6rem;
+    color: #999;
+}
+.fui-tab-content .fui-cell-group.detail .title{
+    font-size: 0.65rem;
+    line-height: 1.75rem;
+    padding-left: 0.6rem;
+    border-left: 2px solid #000;
+}
+.fui-tab-content .fui-cell-group.detail .content-images i{
+    font-size: 6rem;
+    color: #999;
+}
+.fui-tab-content .fui-cell-group.detail .content-images img{
+    width: 100%;
+}
+.visitRecord .fui-cell,.transRecord .fui-cell{
+    padding: 0.6rem 0.5rem 0.5rem;
+}
+.visitRecord .fui-cell-text span,.transRecord .fui-cell-text span{
+    line-height: 0.8rem;
+}
+.visitRecord .fui-cell-text .name,.transRecord .fui-cell-text .name{
+    font-size: 0.8rem;
+    color: #333;
+}
+.visitRecord .fui-cell-text .phone,.transRecord .fui-cell-text .phone{
+    font-size: 0.55rem;
+    color: #999;
+}
+.visitRecord .fui-cell-remark,.transRecord .fui-cell-remark{
+    font-size: 0.7rem;
 }
