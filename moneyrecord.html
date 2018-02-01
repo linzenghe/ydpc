@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group category-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">
+                    <div class="recordnavbox">
+                        <div class="weui-navbar recordtab amosflex">
+                            <a class="weui-navbar__item weui_bar__item_on" href="javascript:;">消费奖励</a>
+                            <a class="weui-navbar__item" href="javascript:;">兑换管理</a>                            
+                        </div>                        
+                    </div>
+                </div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="panel listpanel">
+                    <div class="weui-panel" id="rewardbox">
+                        <div class="listpanel-head">
+                            <div class="bottomline">
+                                <div class="weui-flex">
+                                  <div class="weui-flex__item amos-flexitem text-center">商家名称</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">消费金额</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">操作时间</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="record-listpanel-body">
+                            <div class="list weui-flex">
+                                  <div class="amos-flexitem weui-flex__item">2017款美国进口林肯MKC2017款美国进口林肯MKC</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">3840.00</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">2018-1-8</div>                      
+                            </div>
+                            <div class="list weui-flex">
+                                  <div class="amos-flexitem weui-flex__item">2017款美国进口林肯MKC</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">3840.00</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">2018-1-8</div>                      
+                            </div>
+                            <div class="list weui-flex">
+                                  <div class="amos-flexitem weui-flex__item">2017款美国进口林肯MKC</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">3840.00</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">2018-1-8</div>                      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-panel" id="exchangebox" style="display: none;margin-top:0;">
+                        <div class="listpanel-head">
+                            <div class="bottomline">
+                                <div class="weui-flex">
+                                  <div class="weui-flex__item amos-flexitem text-center">时间</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">申请金额</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">到账金额</div>
+                                  <div class="amos-flexitem text-center" style="width: 70px;">状态</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="record-listpanel-body exchange">
+                            <div class="list weui-flex">
+                                  <div class="weui-flex__item amos-flexitem text-center">2018-12-12</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">13500.00</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">88888.88</div>
+                                  <div class="amos-flexitem text-center" style="width: 70px;">已提现</div>                    
+                            </div>
+                            <div class="list weui-flex">
+                                  <div class="weui-flex__item amos-flexitem text-center">2018-12-12</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">13500.00</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">88888.88</div>
+                                  <div class="amos-flexitem text-center" style="width: 70px;">已提现</div>                    
+                            </div>
+                            <div class="list weui-flex">
+                                  <div class="weui-flex__item amos-flexitem text-center">2018-12-12</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">13500.00</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">88888.88</div>
+                                  <div class="amos-flexitem text-center" style="width: 70px;">已提现</div>                    
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".recordnavbox .weui-navbar__item").each(function(){
+                $(this).on("click",function(){
+                    $(this).addClass("weui_bar__item_on");
+                    $(this).siblings().removeClass("weui_bar__item_on");
+                    if($("#rewardbox").css("display")=="none"){
+                        $("#rewardbox").show();
+                        $("#exchangebox").hide();
+                    }else{
+                        $("#rewardbox").hide();
+                        $("#exchangebox").show();                        
+                    }
+                });
+            });
+        })
+    </script>
+</body>
+</html>
