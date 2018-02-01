@@ -29,7 +29,7 @@ help.html = 用户帮助
 
 carpooldetailsuccess.html = 拼车详情-1
 
-carpooldetaildoing.html = 拼车详情
+carpooldetaildoing.html = 拼车详情(拼车详情可以做成一个页面, 取名carpooldetail.html)
 
 pickupform.html = 申请提车
 

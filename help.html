@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group help-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">用户帮助</div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="fui-cell-group fui-cell-click help_panel">
+                    <div class="fui-cell on">
+                        <div class="fui-cell-icon">01</div>
+                        <div class="fui-cell-text">有关于Creative Cloud的最新功能</div>
+                        <div class="fui-cell-remark"></div>
+                    </div>
+                    <div class="ans">您可以在Creative Could概要页了解Creative Cloud创意应用软件最新功能的所有信息。如想获知每个Creative Cloud创意应用软件的最新版本内容，请在 Adobe.com/cn/ 上查看各个产品页面。</div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-icon">02</div>
+                        <div class="fui-cell-text">如何获取Creative Cloud?</div>
+                        <div class="fui-cell-remark"></div>
+                    </div>
+                    <div class="ans">您可以在Creative Could概要页了解Creative Cloud创意应用软件最新功能的所有信息。如想获知每个Creative Cloud创意应用软件的最新版本内容，请在 Adobe.com/cn/ 上查看各个产品页面。</div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-icon">03</div>
+                        <div class="fui-cell-text">我的会员资格何时生效?</div>
+                        <div class="fui-cell-remark"></div>
+                    </div>
+                    <div class="ans">您可以在Creative Could概要页了解Creative Cloud创意应用软件最新功能的所有信息。如想获知每个Creative Cloud创意应用软件的最新版本内容，请在 Adobe.com/cn/ 上查看各个产品页面。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $('.help_panel .fui-cell').on('click',function () {
+            $(this).toggleClass('on').siblings('.fui-cell').removeClass('on');
+            $(this).next('.ans').slideToggle().siblings('.ans').slideUp();
+        })
+    })
+</script>
+</html>

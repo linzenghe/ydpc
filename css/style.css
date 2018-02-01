@@ -376,6 +376,9 @@ ul,li{
     color: #fff;
     font-size: 0.9rem;
 }
+.weui-header .header-right .relation{
+    color: #fff;
+}
 .weui-content{
     bottom: 0;
     padding-bottom: 2.2rem;
@@ -971,14 +974,21 @@ ul,li{
 }
 
 /*分享说明*/
+.share-page .logo{
+    margin-top: 35px;
+}
+.share-page .logo img{
+    width: 4.25rem;
+}
 .share-page .share_text{
-    padding: 25px 16px;
+    padding: 35px 19px;
 }
 .share-page .share_text p{
-    font-size: 0.7rem;
-    text-indent: 1.4rem;
+    font-size: 0.83rem;
+    text-indent: 2rem;
     color: #999;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: 3px;
 }
 
 /*商品详情*/
@@ -1408,4 +1418,78 @@ ul,li{
 }
 .set-page .fui-cell-group .fui-cell .fui-cell-icon .iconfont.out{
     background-position: 0 -361px;
+}
+/*修改密码*/
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.phone{
+    height: 24px;
+    margin-bottom: 0;
+    background-position: 0 -399px;
+}
+.resetPassword-page .fui-cell{
+    position: relative;
+}
+.resetPassword-page .fui-cell-info{
+    padding-right: 5rem;
+}
+.resetPassword-page .fui-cell-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5.25rem;
+    height: 100%;
+}
+.resetPassword-page .fui-cell-group{
+    margin-top: 1rem;
+}
+.resetPassword-page .fui-cell-btn .fui-btn{
+    position: absolute;
+    top: 0;
+    width: 5.25rem;
+    height: 100%;
+    color: #fff;
+    font-size: 0.85rem;
+    background: url("../img/tmp_bg.png") repeat-y 0 0;
+    background-size: 100% auto;
+    border: none;
+}
+
+/*帮助中心*/
+.help-page .ans{
+    background: #ececec;
+    display: none;
+}
+.help-page .fui-cell-group{
+    margin-top: 0;
+}
+.help-page .fui-cell-group .fui-cell-icon{
+    background: #e5e5e5;
+    color: #000;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 0.83rem;
+    line-height: 24px;
+    margin-right: 0.8rem;
+}
+.help-page .fui-cell-group .fui-cell-text{
+    font-size: 0.85rem;
+}
+.help-page .fui-cell-group.fui-cell-click .fui-cell-remark:after{
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: -4px;
+}
+.help-page .fui-cell-group.fui-cell-click .fui-cell.on .fui-cell-remark:after{
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.help-page .fui-cell-group .ans{
+    font-size: 0.65rem;
+    line-height: 1.05rem;
+    color: #999;
+    padding: 16px 10px;
 }
