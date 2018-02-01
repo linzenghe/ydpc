@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group carpool-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">拼车记录</div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="fui-goods-group">
+                    <div class="fui-goods-item">
+                        <a href="">
+                            <div class="image" style="background-image: url('img/goodsImg.png');"></div>
+                        </a>
+                        <div class="detail">
+                            <a href="">
+                                <div class="name">2017款美国进口林肯MKC尊享版+加装360全视角记录仪</div>
+                                <div class="time">2018-1-18 22:00</div>
+                            </a>
+                            <div class="progress">
+                                <div class="weui-progress">
+                                    <div class="weui-progress__bar">
+                                        <div class="weui-progress__inner-bar js_progress" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                                <p class="tip">目前是第<span class="text_red">2</span>位，还需<span class="text_red">N</span>人即可提车</p>
+                            </div>
+                            <div class="relation">
+                                <button class="ydpc_btn">联系客服</button>
+                            </div>
+                            <div class="payStatus"><p>已支付</p></div>
+                        </div>
+                    </div>
+                    <div class="fui-goods-item">
+                        <a href="">
+                            <div class="image" style="background-image: url('img/goodsImg.png');"></div>
+                        </a>
+                        <div class="detail">
+                            <a href="">
+                                <div class="name">2017款美国进口林肯MKC尊享版+加装360全视角记录仪</div>
+                                <div class="time">2018-1-18 22:00</div>
+                            </a>
+                            <div class="progress">
+                                <div class="weui-progress">
+                                    <div class="weui-progress__bar">
+                                        <div class="weui-progress__inner-bar js_progress" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                                <p class="tip">已凑够<span>N</span>位恭喜您已经可提车</p>
+                            </div>
+                            <div class="relation">
+                                <button class="ydpc_btn">立即提车</button>
+                            </div>
+                            <div class="payStatus"><p>拼车成功</p></div>
+                        </div>
+                    </div>
+                    <div class="fui-goods-item">
+                        <a href="">
+                            <div class="image" style="background-image: url('img/goodsImg.png');"></div>
+                        </a>
+                        <div class="detail">
+                            <a href="">
+                                <div class="name">2017款美国进口林肯MKC尊享版+加装360全视角记录仪</div>
+                                <div class="time">2018-1-18 22:00</div>
+                            </a>
+                            <div class="progress">
+                                <div class="weui-progress">
+                                    <div class="weui-progress__bar">
+                                        <div class="weui-progress__inner-bar js_progress" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                                <p class="tip">未补足余款，请补足余款参与拼车</p>
+                            </div>
+                            <div class="relation">
+                                <button class="ydpc_btn">联系客服</button>
+                            </div>
+                            <div class="payStatus"><p>已支付</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

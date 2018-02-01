@@ -22,8 +22,54 @@
     <div class="weui-page-group member-page">   <!--page写页面名字-->
         <div class="weui-page weui-page-current">
             <div class="weui-content">
-
-
+                <div class="member_panel">
+                    <div class="userInfo text-center">
+                        <p class="edit"><i class="ydpc icon-ic_mode_edit_px"></i>编辑信息</p>
+                        <h5 class="name">亚瑟·潘德拉贡</h5>
+                        <p class="phone">181****8888</p>
+                    </div>
+                </div>
+                <div class="fui-cell-group fui-cell-click" style="margin-top: 0">
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont inv"></i></div>
+                        <div class="fui-cell-text"><p>邀请的好友</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont bal"></i></div>
+                        <div class="fui-cell-text"><p>余额</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont record"></i></div>
+                        <div class="fui-cell-text"><p>拼车记录</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont set"></i></div>
+                        <div class="fui-cell-text"><p>设置</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                </div>
+                <div class="fui-cell-group fui-cell-click">
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont agent"></i></div>
+                        <div class="fui-cell-text"><p>代理商系统</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                </div>
+                <div class="fui-cell-group fui-cell-click">
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont share"></i></div>
+                        <div class="fui-cell-text"><p>我要分享</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont help"></i></div>
+                        <div class="fui-cell-text"><p>帮助说明</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                </div>
             </div>
             <!--底部导航-->
             <div class="weui-tabbar">
@@ -60,25 +106,5 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".swiper-container").swiper({
-                loop: true,
-                autoplay: 3000
-            });
-
-            $(".address").on('click',function (e) {
-                e.stopPropagation();
-                $(this).next().toggleClass('hide');
-            });
-            $(".drop_address li").on('click',function (e) {
-                var add=$(this).text();
-                $('.address span').text(add);
-            });
-            $(document.body).on('click',function () {
-                $(".drop_address").addClass('hide');
-            })
-        })
-    </script>
 </body>
 </html>

@@ -651,6 +651,7 @@ ul,li{
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
+    display: block;
 }
 .fui-goods-group .fui-goods-item .image {
     width: 100%;
@@ -1039,6 +1040,35 @@ ul,li{
     margin-right: .2rem;
     line-height: 0.65rem;
 }
+.fui-cell-group .fui-cell .fui-cell-label{
+    position: relative;
+    display: block;
+    width: 6rem;
+    font-size: 0.85rem;
+    color: #333;
+}
+.fui-cell-group .fui-cell .fui-cell-info{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+}
+.fui-cell-group .fui-cell .fui-input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: .85rem;
+    -webkit-appearance: none;
+    background-color: transparent;
+    color: inherit;
+    height: 1.41176471em;
+    line-height: 1.41176471;
+}
+
 
 .fui-detail-group .fui-cell{
     padding: 0 0.5rem;
@@ -1153,4 +1183,229 @@ ul,li{
 }
 .visitRecord .fui-cell-remark,.transRecord .fui-cell-remark{
     font-size: 0.7rem;
+}
+
+/*会员中心*/
+.member-page .member_panel{
+    background: url("../img/tmp_bg.png") repeat-y 0 0;
+    background-size:100% 100%;
+    color: #fff;
+    padding: 0.65rem 0.5rem;
+}
+.member-page .member_panel .userInfo{
+    position: relative;
+    background: rgba(123,123,123,0.2);
+    padding: 1.7rem 0;
+    border-radius: 8px;
+}
+.member-page .member_panel .userInfo .name{
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.member-page .member_panel .userInfo .phone{
+    font-size: 0.65rem;
+    margin-top: 6px;
+}
+.member-page .member_panel .userInfo .edit{
+    position: absolute;
+    font-size: 0.65rem;
+    right: 0.6rem;
+    top: 0.65rem;
+}
+.member-page .member_panel .userInfo .edit .ydpc{
+    font-size: 0.63rem;
+    margin-right: 0.4rem;
+}
+
+.member-page .fui-cell-group{
+    margin-top: 1rem;
+}
+.member-page .fui-cell-group .fui-cell{
+    padding: 0.9rem 0.5rem 0.9rem;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont{
+    width: 18px;
+    height: 18px;
+    background: url("../img/icon.png") no-repeat 0 0;
+    background-size: 100% auto;
+    display: inline-block;
+    margin-right: 0.8rem;
+    margin-bottom: -3px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.inv{
+    background-position: 0 -26px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.bal{
+    background-position: 0 -56px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.record{
+    background-position: 0 -88px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.set{
+    background-position: 0 -122px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.agent{
+    background-position: 0 -157px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.share{
+    background-position: 0 -190px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.help{
+    background-position: 0 -224px;
+}
+.member-page .fui-cell-group .fui-cell .fui-cell-text{
+    font-size: 0.85rem;
+    color: #333;
+}
+.fui-cell-group.fui-cell-click .fui-cell-remark:after{
+    content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 0.4rem;
+    width: 0.4rem;
+    border-width: 2px 2px 0 0;
+    border-color: #999;
+    border-style: solid;
+    position: relative;
+    top: 0px;
+    margin-left: 0;
+}
+
+/*修改个人信息*/
+.editmember-page .fui-cell-group{
+    margin-top: 0.5rem;
+}
+.editmember-page .fui-cell-group .fui-cell-icon .iconfont{
+    width: 18px;
+    height: 18px;
+    background: url("../img/icon.png") no-repeat 0 0;
+    background-size: 100% auto;
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+.editmember-page .fui-cell-group .fui-cell-icon .iconfont.edit{
+    background-position: 0 -257px;
+}
+.editmember-page .form .item_submit{
+    padding: 2.5rem 0.5rem 0;
+}
+.editmember-page .form .item_submit .ydpc_btn{
+    height: 2.2rem;
+    line-height: 2.2rem;
+    font-size: 0.8rem;
+}
+
+/*拼车记录*/
+.carpool-page .fui-goods-item{
+    position: relative;
+    height: auto;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.carpool-page .fui-goods-item .image{
+    height: 4rem;
+    width: 4rem;
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.carpool-page .fui-goods-item .detail{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #fff;
+    padding-left: .5rem;
+    padding-bottom: 0;
+    position: relative;
+}
+.carpool-page .fui-goods-item .detail .name{
+    margin-top: 0;
+    color: #333;
+    font-size: 0.65rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.carpool-page .fui-goods-item .detail .time{
+    font-size: 0.55rem;
+    color: #999;
+}
+.carpool-page .fui-goods-item .detail .progress{
+    margin-top: 6px;
+    padding-right: 80px;
+}
+.carpool-page .fui-goods-item .detail .progress .tip{
+    font-size:0.45rem;
+    color: #333;
+    line-height: 17px;
+    white-space:nowrap;
+}
+.carpool-page .fui-goods-item .detail .relation{
+    position: absolute;
+    top: 1.3rem;
+    right: 0rem;
+}
+.carpool-page .fui-goods-item .detail .relation .ydpc_btn{
+    font-size: 0.55rem;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    padding: 0 0.5rem;
+}
+.carpool-page .fui-goods-item .detail .payStatus{
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+}
+.carpool-page .fui-goods-item .detail .payStatus p{
+    font-size: 0.55rem;
+    color: #999;
+    word-break:keep-all;
+    white-space:nowrap;
+}
+.weui-progress__bar{
+    height: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.weui-progress__inner-bar{
+    background-color:#e11b1b;
+    border-radius: 3px;
+}
+/*设置*/
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.pass{
+    background-position: 0 -290px;
+}
+.fui-cell-group .fui-cell .fui-cell-icon .iconfont.about{
+    background-position: 0 -325px;
+}
+.set-page .fui-cell-group{
+    margin-top: 1rem;
+}
+.set-page .fui-cell{
+    padding: 0.9rem 0.5rem 0.9rem;
+}
+.set-page .fui-cell .fui-cell-text{
+    font-size: 0.85rem;
+}
+.set-page .fui-cell-group.loginOut{
+    margin-top: 2.5rem;
+}
+.set-page .fui-cell-group.loginOut .fui-cell{
+    display: block;
+}
+.set-page .fui-cell-group .fui-cell .fui-cell-icon .iconfont.out{
+    background-position: 0 -361px;
 }
