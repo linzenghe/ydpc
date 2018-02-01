@@ -19,18 +19,33 @@
     <script type="text/javascript" src="plugins/common.js"></script>
 </head>
 <body ontouchstart>
-    <div class="weui-page-group share-page">   <!--page写页面名字-->
+    <div class="weui-page-group set-page">   <!--page写页面名字-->
         <div class="weui-page weui-page-current">
             <header class="weui-header">
                 <div class="header-left">
                     <a class="back" onclick="javascript:history.back(-1);"></a>
                 </div>
-                <div class="title">分享说明</div>
+                <div class="title">设置</div>
             </header>
             <div class="weui-content navbar">
-                <div class="share_text">
-                    <p>技术正以前所未有的速度改变着我们的生活。我们滑动屏幕便可以享用佳肴，点击屏幕便可以轻松出行，单击鼠标便可以选购服装。我们戴上 VR 眼镜便可以看到遥远的世界，我们用手指创作杰作，用视频重温美好的回忆。</p>
-                    <p>Adobe 就在那里 - 事实上，我们位于您可能未曾料到的地方。</p>
+                <div class="fui-cell-group fui-cell-click" style="margin-top: 0">
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont pass"></i></div>
+                        <div class="fui-cell-text"><p>修改密码</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                </div>
+                <div class="fui-cell-group fui-cell-click">
+                    <a class="fui-cell" href="">
+                        <div class="fui-cell-icon"><i class="iconfont about"></i></div>
+                        <div class="fui-cell-text"><p>关于我们</p></div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                </div>
+                <div class="fui-cell-group loginOut">
+                    <div class="fui-cell text-center">
+                        <p class="fui-cell-icon"><i class="iconfont out"></i>退出登录</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -19,19 +19,29 @@
     <script type="text/javascript" src="plugins/common.js"></script>
 </head>
 <body ontouchstart>
-    <div class="weui-page-group share-page">   <!--page写页面名字-->
+    <div class="weui-page-group editmember-page">   <!--page写页面名字-->
         <div class="weui-page weui-page-current">
             <header class="weui-header">
                 <div class="header-left">
                     <a class="back" onclick="javascript:history.back(-1);"></a>
                 </div>
-                <div class="title">分享说明</div>
+                <div class="title">修改个人信息</div>
             </header>
             <div class="weui-content navbar">
-                <div class="share_text">
-                    <p>技术正以前所未有的速度改变着我们的生活。我们滑动屏幕便可以享用佳肴，点击屏幕便可以轻松出行，单击鼠标便可以选购服装。我们戴上 VR 眼镜便可以看到遥远的世界，我们用手指创作杰作，用视频重温美好的回忆。</p>
-                    <p>Adobe 就在那里 - 事实上，我们位于您可能未曾料到的地方。</p>
-                </div>
+                <form class="form">
+                    <div class="fui-cell-group">
+                        <div class="fui-cell">
+                            <div class="fui-cell-icon"><i class="iconfont edit"></i></div>
+                            <div class="fui-cell-label" style="margin-top: -3px">修改昵称</div>
+                            <div class="fui-cell-info">
+                                <input type="text" id="realname" name="realname"  placeholder="请填写昵称" class="fui-input text-right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_submit">
+                        <button class="ydpc_btn">保存</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
