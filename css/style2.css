@@ -1,0 +1,20 @@
+.amosflex{display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
+#agentlogin_form .ydpc,#login_form .ydpc,#register_form .ydpc{color: #fff;font-size: 1rem;}
+.agentlogin h1{padding-top: 108px;font-weight: normal;color: #fff;}
+.amos-content-padded{padding:10px;}
+.amos-infobar{width: 100%;height: 50px;color:#fff;justify-content:center;background: url(../img/tmp_bg.png) scroll repeat-y 0 0;background-size: 100% auto;border-radius: 10px;text-align: center;line-height: 50px;}
+.amos-infobar .ydpc{font-size: 1.2rem;}
+.amos-checkbar{margin: 0;border-radius: 10px;}
+.amos-checkbar .weui-cell{padding:0;padding-left:10px;}
+.amos-checkbar button{width: 106px;height: 50px;color: #fff;border: 0;background: url(../img/tmp_bg.png) scroll repeat-y 0 0;background-size: 100% auto;font-size:0.8rem;}
+.amospanel{width: 100%;background-color: #fff;margin-top: 10px;}
+.listpanel{}
+.listpanel .listpanel-head{padding:0 10px;color: #333;}
+.bottomline{border-bottom: 1px solid #f1f1f1;}
+.text-center{text-align: center;}
+.listpanel>.weui-panel:before{height: 0;border-top: 0;}
+.listpanel>.weui-panel:after{height: 0;border-bottom: 0;}
+.listpanel .listpanel-head .weui-flex__item{padding:11px 0;background: url(../img/cutline.png) scroll no-repeat center right;background-size: 1px 14px;}
+.listpanel .listpanel-head .weui-flex__item:last-child{background: none;}
+.listpanel .listpanel-head .weui-flex{margin-left: -10px;margin-right: -10px;}
+.listpanel-body>list{padding:14px 0;}
