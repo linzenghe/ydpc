@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group category-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">兑换月账单</div>
+            </header>
+            <div class="weui-content navbar">
+                <div class="panel listpanel">
+                    <div class="billtime">
+                    	<div class="time"><span>2018</span>年<span>1</span>月</div>
+                    	<span class="prevmonth"></span>
+                    	<span class="nextmonth"></span>
+                    </div>
+                    <div class="weui-panel" style="margin-top: 0;">
+                        <div class="listpanel-head">
+                            <div class="bottomline">
+                                <div class="weui-flex">
+                                  <div class="amos-flexitem text-center" style="width: 90px;">操作时间</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">单号</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;">消费金额</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="record-listpanel-body billlist">
+                            <div class="list weui-flex">
+                                  <div class="amos-flexitem text-center" style="width: 90px;">8888-88-88<br>88:88:88</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">2528757667515632<br>2017款美国进口林肯MKC2017款美</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;color: #F9D51E;">-38400000.00</div>  
+                                  <span class="exchanged"></span>                    
+                            </div>
+                            <div class="list weui-flex">
+                                  <div class="amos-flexitem text-center" style="width: 90px;">8888-88-88<br>88:88:88</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">2528757667515632<br>2017款美国进口林肯MKC2017款美</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;color: #F9D51E;">-38400000.00</div>                      
+                            </div>
+                            <div class="list weui-flex">
+                                  <div class="amos-flexitem text-center" style="width: 90px;">8888-88-88<br>88:88:88</div>
+                                  <div class="weui-flex__item amos-flexitem text-center">2528757667515632<br>2017款美国进口林肯MKC2017款美</div>
+                                  <div class="amos-flexitem text-center" style="width: 90px;color: #F9D51E;">-38400000.00</div>                      
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+        })
+    </script>
+</body>
+</html>

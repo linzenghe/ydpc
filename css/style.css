@@ -1039,7 +1039,7 @@ ul,li{
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    color: #000;
+    color: #333;
     font-size: 0.7rem;
     line-height: 0.7rem;
 }
