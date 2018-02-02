@@ -359,6 +359,7 @@ ul,li{
     top: 0;
     left: 0;
     z-index: 1;
+    font-size: 0.9rem;
 }
 .weui-header .header-right{
     position: absolute;
@@ -1415,8 +1416,8 @@ ul,li{
     color: #999;
 }
 .carpool-page .fui-goods-item .detail .progress{
-    margin-top: 6px;
-    padding-right: 80px;
+    margin-top: 8px;
+    padding-right: 100px;
 }
 .carpool-page .fui-goods-item .detail .progress .tip{
     font-size:0.45rem;
@@ -1518,6 +1519,7 @@ ul,li{
 .help-page .ans{
     background: #ececec;
     display: none;
+    margin-top: -1px;
 }
 .help-page .fui-cell-group{
     margin-top: 0;
@@ -1556,23 +1558,23 @@ ul,li{
 }
 
 /*拼车详情*/
-.carpool-page .fui-goods-item{
+.carpoolDetail-page .fui-goods-item{
     margin-bottom: 0;
 }
-.carpool-page .fui-goods-group{
+.carpoolDetail-page .fui-goods-group{
     padding-bottom: 0;
 }
-.carpool-page .detail{
+.carpoolDetail-page .detail_info{
     margin-top: 0.5rem;
 }
-.carpool-page .detail .title{
+.carpoolDetail-page .detail_info .title{
     font-size: 0.65rem;
     line-height: 1.8rem;
     border-left: 2px solid #000;
     padding-left: 0.5rem;
     position: relative;
 }
-.carpool-page .detail .title:before{
+.carpoolDetail-page .detail_info .title:before{
     content: " ";
     position: absolute;
     left: 0.5rem;
@@ -1588,26 +1590,26 @@ ul,li{
     -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
 }
-.carpool-page .detail .info{
+.carpoolDetail-page .detail_info .info{
     padding: 0.75rem 0.5rem;
 }
-.carpool-page .detail .info li{
+.carpoolDetail-page .detail_info .info li{
     font-size: 0.65rem;
     color: #333;
     line-height: 0.9rem;
     margin-bottom: 0.5rem;
 }
-.carpool-page .detail .info li:last-child{
+.carpoolDetail-page .detail_info .info li:last-child{
     margin-bottom: 0;
 }
-.carpool-page .detail .info li label{
+.carpoolDetail-page .detail_info .info li label{
     color: #999;
 }
-.carpool-page .detail .ft{
+.carpoolDetail-page .detail_info .ft{
     position: relative;
     padding: 0.6rem;
 }
-.carpool-page .detail .ft:before{
+.carpoolDetail-page .detail_info .ft:before{
     content: " ";
     position: absolute;
     left: 0.5rem;
@@ -1623,22 +1625,22 @@ ul,li{
     -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
 }
-.carpool-page .detail .ft p{
+.carpoolDetail-page .detail_info .ft p{
     font-size: 0.65rem;
 }
-.carpool-page .detail .ft .ydpc{
+.carpoolDetail-page .detail_info .ft .ydpc{
     margin-right: 0.5rem;
     font-size: 0.65rem;
 }
-.carpool-page .visitRecord .fui-cell.title{
+.carpoolDetail-page .visitRecord .fui-cell.title{
     padding: 0.8rem 0.5rem 0.7rem;
 }
-.carpool-page .visitRecord .fui-cell.title .fui-cell-text{
+.carpoolDetail-page .visitRecord .fui-cell.title .fui-cell-text{
     color: #999;
     font-size: 0.75rem;
 }
 
-.carpool-page .visitRecord .fui-cell.title .shareBtn{
+.carpoolDetail-page .visitRecord .fui-cell.title .shareBtn{
     font-size: 0.7rem;
     border:1px solid #ececec;
     color: #999;
