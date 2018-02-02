@@ -65,17 +65,6 @@
                         <a data-tab="tab2" class="tab">来访记录</a>
                         <a data-tab="tab3" class="tab">交易记录</a>
                     </div>
-                    <div class="fui-tab-content intro on" id="tab1">
-                        <div class="fui-cell-group intImg text-center">
-                            <i class="ydpc icon-Group2"></i>
-                        </div>
-                        <div class="fui-cell-group detail">
-                            <div class="title">图文详情</div>
-                            <div class="content-images text-center">
-                                <i class="ydpc icon-Group2"></i>
-                            </div>
-                        </div>
-                    </div>
                     <div class="fui-tab-content visitRecord" id="tab2">
                         <div class="fui-cell-group">
                             <div class="fui-cell">
@@ -120,6 +109,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="fui-tab-content intro on" id="tab1">
+                        <div class="fui-cell-group intImg text-center">
+                            <i class="ydpc icon-Group2"></i>
+                        </div>
+                        <div class="fui-cell-group detail">
+                            <div class="title">图文详情</div>
+                            <div class="content-images text-center">
+                                <i class="ydpc icon-Group2"></i>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="weui_paybar">
@@ -134,16 +135,28 @@
                 loop: true,
                 autoplay: 3000
             });
-
             /**/
             $('.fui-detail-tab .tab').on('click',function () {
                 var tabId=$(this).data('tab');
                 $(this).addClass('active').siblings().removeClass('active');
-                $('#'+tabId).addClass('on').siblings().removeClass('on');
+                switch(tabId)
+                {
+                    case 'tab1':
+                        $('#tab2').removeClass('on');
+                        $('#tab3').removeClass('on');
+                        break;
+                    case 'tab2':
+                        $('#tab2').addClass('on');
+                        $('#tab3').removeClass('on');
+                        break;
+                    case 'tab3':
+                        $('#tab2').removeClass('on');
+                        $('#tab3').addClass('on');
+                        break;
+                    default:
+                       break;
+                }
             });
-
-
-
         })
     </script>
 </body>
