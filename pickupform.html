@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group pickup-page">   <!--page写页面名字-->
+        <div class="weui-page weui-page-current">
+            <header class="weui-header">
+                <div class="header-left">
+                    <a class="back" onclick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="title">申请提车</div>
+            </header>
+            <div class="weui-content navbar">
+                <form class="form">
+                    <div class="fui-cell-group" style="margin-top: 0">
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">报单人姓名<span class="text_red">*</span></div>
+                            <div class="fui-cell-info">
+                                <input type="text" id="name" name="name"  placeholder="请输入姓名" class="fui-input text-right">
+                            </div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">报单人电话<span class="text_red">*</span></div>
+                            <div class="fui-cell-info">
+                                <input type="text" id="phone" name="phone"  placeholder="请输入电话" class="fui-input text-right">
+                            </div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">报单级别</div>
+                            <div class="fui-cell-info">
+                                <input type="text"  placeholder="自动填写" class="fui-input text-right">
+                            </div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">车型号</div>
+                            <div class="fui-cell-info">
+                                <input type="text"  placeholder="自动填写" class="fui-input text-right">
+                            </div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">车颜色<span class="text_red">*</span></div>
+                            <div class="fui-cell-info">
+                                <input type="text" placeholder="请输入颜色" class="fui-input text-right">
+                            </div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">推荐人姓名</div>
+                            <div class="fui-cell-info">
+                                <input type="text" placeholder="请输入推荐人姓名" class="fui-input text-right">
+                            </div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">推荐人电话</div>
+                            <div class="fui-cell-info">
+                                <input type="text" placeholder="请输入推荐人电话" class="fui-input text-right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fui-cell-group">
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">汇款凭证<span class="text_red">*</span></div>
+                        </div>
+                        <div class="fui-cell file-cell">
+                            <label class="imgBox text-center">
+                                <input type="file" class="hide">
+                                <i class="ydpc icon-application_icon_cam"></i>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="weui_paybar">
+                <div class="payBtn ydPay text-center">提交提车表单</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
