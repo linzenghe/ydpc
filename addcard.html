@@ -19,75 +19,53 @@
     <script type="text/javascript" src="plugins/common.js"></script>
 </head>
 <body ontouchstart>
-    <div class="weui-page-group pickup-page">   <!--page写页面名字-->
+    <div class="weui-page-group addcard-page">   <!--page写页面名字-->
         <div class="weui-page weui-page-current">
             <header class="weui-header">
                 <div class="header-left">
                     <a class="back" onclick="javascript:history.back(-1);"></a>
                 </div>
-                <div class="title">申请提车</div>
+                <div class="title">添加银行卡</div>
             </header>
             <div class="weui-content navbar">
                 <form class="form">
+                    <div class="h-tip">请绑定本人的银行卡用于提现</div>
                     <div class="fui-cell-group" style="margin-top: 0">
                         <div class="fui-cell">
-                            <div class="fui-cell-label">报单人姓名<span class="text_red">*</span></div>
+                            <div class="fui-cell-label">持卡人姓名<span class="text_red">*</span></div>
                             <div class="fui-cell-info">
                                 <input type="text" id="name" name="name"  placeholder="请输入姓名" class="fui-input text-right">
                             </div>
                         </div>
                         <div class="fui-cell">
-                            <div class="fui-cell-label">报单人电话<span class="text_red">*</span></div>
+                            <div class="fui-cell-label">卡号<span class="text_red">*</span></div>
                             <div class="fui-cell-info">
-                                <input type="text" id="phone" name="phone"  placeholder="请输入电话" class="fui-input text-right">
+                                <input type="text"   placeholder="请输入银行卡号" class="fui-input text-right">
                             </div>
                         </div>
                         <div class="fui-cell">
-                            <div class="fui-cell-label">报单级别</div>
+                            <div class="fui-cell-label">卡类型<span class="text_red">*</span></div>
                             <div class="fui-cell-info">
-                                <input type="text"  placeholder="自动填写" class="fui-input text-right">
+                                <input type="text"  placeholder="如储蓄卡、借记卡" class="fui-input text-right">
                             </div>
                         </div>
                         <div class="fui-cell">
-                            <div class="fui-cell-label">车型号</div>
+                            <div class="fui-cell-label">开户地区<span class="text_red">*</span></div>
                             <div class="fui-cell-info">
-                                <input type="text"  placeholder="自动填写" class="fui-input text-right">
+                                <input type="text"  placeholder="请输入开户地区" class="fui-input text-right">
                             </div>
                         </div>
                         <div class="fui-cell">
-                            <div class="fui-cell-label">车颜色<span class="text_red">*</span></div>
+                            <div class="fui-cell-label">支行信息<span class="text_red">*</span></div>
                             <div class="fui-cell-info">
-                                <input type="text" placeholder="请输入颜色" class="fui-input text-right">
+                                <input type="text" placeholder="请输入支行信息" class="fui-input text-right">
                             </div>
-                        </div>
-                        <div class="fui-cell">
-                            <div class="fui-cell-label">推荐人姓名</div>
-                            <div class="fui-cell-info">
-                                <input type="text" placeholder="请输入推荐人姓名" class="fui-input text-right">
-                            </div>
-                        </div>
-                        <div class="fui-cell">
-                            <div class="fui-cell-label">推荐人电话</div>
-                            <div class="fui-cell-info">
-                                <input type="text" placeholder="请输入推荐人电话" class="fui-input text-right">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fui-cell-group file-cell-group">
-                        <div class="fui-cell">
-                            <div class="fui-cell-label">汇款凭证<span class="text_red">*</span></div>
-                        </div>
-                        <div class="fui-cell file-cell">
-                            <label class="imgBox text-center">
-                                <input type="file" class="hide">
-                                <i class="ydpc icon-application_icon_cam"></i>
-                            </label>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="weui_paybar">
-                <div class="payBtn ydPay text-center">提交提车表单</div>
+                <div class="payBtn ydPay text-center">确定</div>
             </div>
         </div>
     </div>

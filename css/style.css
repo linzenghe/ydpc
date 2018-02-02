@@ -1035,6 +1035,9 @@ ul,li{
     -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
 }
+.fui-cell-group .fui-cell:last-child:before{
+    display: none;
+}
 .fui-cell-group .fui-cell .fui-cell-text{
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -1589,20 +1592,43 @@ ul,li{
     padding: 2px 7px;
 }
 
-.pickup-page .file-cell{
-    display: block;
-    padding: 0.5rem;
+.form .fui-cell-label span.text_red{
+    margin-left: 8px;
 }
-.pickup-page .file-cell .imgBox{
+/*申请提车 身份认证*/
+.pickup-page .fui-cell-group .fui-cell,.autentication-page .fui-cell-group .fui-cell{
+    padding: 0.8rem 0.5rem 0.7rem;
+}
+.file-cell-group.file-cell-group .fui-cell-label{
+    height: 1.41176471em;
+    line-height: 1.41176471;
+}
+.pickup-page .file-cell,.autentication-page .file-cell{
+    display: block;
+    padding: 0.5rem!important;
+}
+.autentication-page .fui-cell-group .fui-cell .fui-cell-label{
+    width: 100%;
+}
+.pickup-page .file-cell .imgBox,.autentication-page .file-cell .imgBox{
     background: #F1F1F1;
     display: block;
     height: 130px;
     border-radius: 8px;
 }
-.pickup-page .file-cell .imgBox .ydpc{
-    font-size: 4rem;
+.pickup-page .file-cell .imgBox .ydpc,.autentication-page .file-cell .imgBox .ydpc{
+    font-size: 3rem;
     color: #dfdfdf;
-    margin-top: 25px;
+    margin-top: 40px;
     display: inline-block;
+}
+.autentication-page .fui-cell-group{
+    margin-top: 0;
+}
+/*添加银行卡*/
+.addcard-page .h-tip{
+    font-size: 0.6rem;
+    color: #999;
+    padding: 0.35rem 0.5rem;
 }
 
