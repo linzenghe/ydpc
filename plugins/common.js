@@ -1,8 +1,5 @@
 
-/*需要加载 jQuery  fastclick jquery-weui */
 
-// 定义content类型
-var APPLICATION_JSON = "application/json; charset=utf-8";
 
 var tools={
     /**
@@ -246,6 +243,17 @@ var tools={
                 }
             }
         }
+    },
+    androidInputBugFix:function () {
+        if (/Android/gi.test(navigator.userAgent)) {
+            window.addEventListener('resize', function () {
+                if (document.activeElement.tagName == 'INPUT' || document.activeElement.tagName == 'TEXTAREA') {
+                    window.setTimeout(function () {
+                        document.activeElement.scrollIntoViewIfNeeded();
+                    }, 0);
+                }
+            })
+        }
     }
 };
 /*
@@ -253,4 +261,5 @@ var tools={
 */
 $(function() {
     FastClick.attach(document.body);
+    tools.androidInputBugFix();
 });
