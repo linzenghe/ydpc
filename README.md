@@ -27,9 +27,7 @@ aboutus.html = 关于我们
 
 help.html = 用户帮助
 
-carpooldetailsuccess.html = 拼车详情-1
-
-carpooldetaildoing.html = 拼车详情(拼车详情可以做成一个页面, 取名carpooldetail.html)
+carpooldetail.html = 拼车详情(拼车详情可以做成一个页面, 取名carpooldetail.html)
 
 pickupform.html = 申请提车
 
@@ -56,3 +54,5 @@ addcard.html = 添加银行卡
 inviteregister.html = 邀请有礼
 
 invitefriend.html = 邀请好友
+
+ad.html = 广告页
