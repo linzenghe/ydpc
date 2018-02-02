@@ -477,6 +477,7 @@ ul,li{
     position: relative;
     font-size: 1rem;
     font-weight: lighter;
+    padding: 11px 0;
 }
 
 .register-page .resLog-panel .weui-navbar__item.weui-bar__item--on{
@@ -487,10 +488,10 @@ ul,li{
     content: '';
     position: absolute;
     height: 2px;
-    width: 4rem;
+    width: 5.5rem;
     bottom: 0;
     left: 50%;
-    margin-left: -2rem;
+    margin-left: -2.75rem;
     background: #fff;
 }
 
@@ -1685,3 +1686,114 @@ ul,li{
     padding: 0.35rem 0.5rem;
 }
 
+/*邀请有礼*/
+.invitation-page .weui-page-current{
+    background: #362C51;
+}
+.invitation-page .resLog-panel .weui-navbar{
+    background: #716D82;
+}
+.invitation-page .resLog-panel .weui-navbar__item{
+    color: #fff;
+}
+.invitation-page .registerBox{
+    background: #716D82;
+}
+.invitation-page .form .investment{
+    margin-top: 0;
+    background:#716D82;
+}
+.invitation-page .form .item{
+    border-bottom: 1px solid #888;
+}
+.invitation-page .form .item>input{
+    color: #000;
+}
+.invitation-page .form .item>input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+    font-weight: lighter;
+}
+.invitation-page .form .item>input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #000;
+    font-weight: lighter;
+}
+.invitation-page .form .item>input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #000;
+    font-weight: lighter;
+}
+.invitation-page .form .item>input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #000;
+    font-weight: lighter;
+}
+.invitation-page .form .weui-btn-submit{
+    background: #ED3044;
+}
+.invitation-page .weui-agree{
+    padding: 0;
+    line-height: 1.25rem;
+}
+.invitation-page .weui-agree .weui-icon-success{
+    font-size: 0.7rem;
+    color: #999;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.invitation-page .weui-agree .weui-check:checked+.weui-icon-success{
+    color: #10DF09;
+}
+.invitation-page .weui-agree .weui-agree__text{
+    font-size: 0.6rem;
+    color: #fff;
+}
+.invitation-page .weui-agree .weui-agree__text a{
+    color: #108EE9;
+}
+.invitation-page .form .appLoadBtn{
+    background: url("../img/apploadBtn_bg.png") repeat-y 0 0;
+    background-size: 100% 100%;
+}
+
+/*分享好友*/
+.invitefriend-page .veCode{
+    padding: 1rem 0;
+    background: #fff;
+}
+.invitefriend-page .veCode .imgBox{
+    width: 8.55rem;
+    height: 8.55rem;
+    box-shadow:0 2px 4px rgba(0,0,0,.16);
+    display: inline-block;
+    border-radius: 8px;
+}
+.invitefriend-page .veCode .imgBox img{
+    width: 100%;
+}
+.invitefriend-page .tip{
+    padding: 0 0.5rem 0.5rem;
+    background: #fff;
+}
+.invitefriend-page .tip p{
+    font-size: 0.65rem;
+    color: #666;
+    line-height: 1.2rem;
+}
+.invitefriend-page .fui-cell-group .fui-cell-icon i{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 16px;
+    line-height: 0;
+    margin-bottom: -2px;
+}
+.invitefriend-page .fui-cell-group .fui-cell-icon i.wechat{
+    background: url("../img/wechat.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.invitefriend-page .fui-cell-group .fui-cell-icon i.friend{
+    background: url("../img/friend.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.invitefriend-page .fui-cell-group .fui-cell-text{
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}

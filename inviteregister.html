@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/swiper.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+</head>
+<body ontouchstart>
+    <div class="weui-page-group register-page invitation-page">
+        <div class="weui-page weui-page-current">
+            <div class="weui-content">
+                <!--banner-->
+                <div class="banner">
+                    <img src="img/invitation_bg.png" width="100%">
+                </div>
+                <div class="weui-tab resLog-panel ">
+                    <div class="weui-navbar">
+                        <a class="weui-navbar__item ">
+                            注册新号
+                        </a>
+                    </div>
+                    <div class="weui-tab__bd">
+                        <div id="tab2" class="weui-tab__bd-item weui-tab__bd-item--active">
+                            <form class="form" id="register_form">
+                                <div class="registerBox">
+                                    <div class="item">
+                                        <label><i class="ydpc icon-Group"></i></label>
+                                        <input class="item_input" placeholder="请输入手机号码">
+                                    </div>
+                                    <div class="item">
+                                        <label><i class="ydpc icon-Group1"></i></label>
+                                        <input class="item_input" placeholder="请输入密码">
+                                    </div>
+                                    <div class="item veCode">
+                                        <label><i class="ydpc icon-login_input_sms"></i></label>
+                                        <input class="item_input" placeholder="请输入验证码">
+                                        <span class="sendVeCode">获取验证码</span>
+                                    </div>
+                                </div>
+
+                                <div  class="weui-agree">
+                                    <label for="resAgree">
+                                        <input type="checkbox" class="weui-check" id="resAgree" name="checkbox" checked="checked">
+                                        <i class="weui-icon-success"></i>
+                                    </label>
+                                    <span class="weui-agree__text">
+                                        我已阅读并同意<a class="openAgree">《云端拼车意向通用条款与条件》</a>
+                                    </span>
+                                </div>
+                                <div class="investment">
+                                    <div class="item">
+                                        <label><i class="ydpc icon-login_input_invite"></i></label>
+                                        <input class="item_input" placeholder="邀请人手机号码（无可不填）">
+                                    </div>
+                                </div>
+
+                                <div class="item_submit">
+                                    <button class="weui-btn weui-btn-submit" type="button">注册并登录</button>
+                                    <button class="weui-btn weui-btn-submit appLoadBtn" type="button">APP下载</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="payAgree" class="weui-popup__container" style="">
+                    <div class="weui-popup__overlay"></div>
+                    <div class="weui-popup__modal">
+                        <article>
+                            <h5>云端拼车意向通用条款与条件</h5>
+                            <p>以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容</p>
+                            <p>以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容以下是协议内容</p>
+                        </article>
+                        <div class="modal_footer text-center">
+                            <button class="ydpc_btn close-popup">我已阅读</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('.openAgree').on('click',function () {
+                $("#payAgree").popup();
+            });
+        })
+    </script>
+</body>
+</html>

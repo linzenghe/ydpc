@@ -52,3 +52,7 @@ authentication.html = 身份认证
 applyexchange.html = 申请兑换
 
 addcard.html = 添加银行卡
+
+inviteregister.html = 邀请有礼
+
+invitefriend.html = 邀请好友
