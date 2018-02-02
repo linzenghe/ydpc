@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>云端拼车</title>
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/weui.css">
+    <link rel="stylesheet" type="text/css" href="plugins/weui/css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <!--js-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/fastclick.js"></script>
+    <script type="text/javascript" src="plugins/weui/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="plugins/common.js"></script>
+    <script type="text/javascript" src="plugins/jquery.lazyload.min.js"></script>
+</head>
+<body ontouchstart>
+    <div class="adpage">
+        <div><img data-original="img/ad/info_01.jpg"></div>
+        <div><img data-original="img/ad/info_02.jpg"></div>
+        <div><img data-original="img/ad/info_03.jpg"></div>
+        <div><img data-original="img/ad/info_04.jpg"></div>
+        <div><img data-original="img/ad/info_05.jpg"></div>
+        <div><img data-original="img/ad/info_06.jpg"></div>
+        <div><img data-original="img/ad/info_07.jpg"></div>
+        <div class="car"><img data-original="img/ad/info_08.jpg">
+            <div class="carlist">
+                <div class="carpic"><img data-original="img/ad/g1.jpg"></div>
+                <div class="carpic"><img data-original="img/ad/g2.jpg"></div>
+            </div>
+        </div>
+        <div class="car"><img data-original="img/ad/info_09.jpg">
+            <div class="carlist">
+                <div class="carpic"><img data-original="img/ad/g3.jpg"></div>
+                <div class="carpic"><img data-original="img/ad/g4.jpg"></div>
+            </div>
+        </div>
+        <div><img data-original="img/ad/info_11.jpg"></div>
+        <div><img data-original="img/ad/info_12.jpg"></div>
+        <div><img data-original="img/ad/info_13.jpg"></div>
+        <div><img data-original="img/ad/info_14.jpg"></div>
+        <div><img data-original="img/ad/info_15.jpg"></div>
+        <div><img data-original="img/ad/info_16.jpg"></div>
+        <div class="start"><img data-original="img/ad/info_17.jpg">
+            <a href="#" title="一键启动"><img data-original="img/ad/start.png"></a>
+        </div>
+    </div>
+<script type="text/javascript">
+$(function(){
+    $(".adpage img").lazyload({
+        threshold: 200,
+        placeholder:"img/transparent.gif",
+        effect: "fadeIn"
+    });
+});
+</script>
+</body>
+</html>
