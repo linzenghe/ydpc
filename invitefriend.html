@@ -36,7 +36,7 @@
                 <div class="tip">
                     <p>您可以在Creative Could概要页了解Creative Cloud创意应用软件最新功能的所有信息。如想获知每个Creative Cloud创意应用软件的最新版本内容，请在 Adobe.com/cn/ 上查看各个产品页面。</p>
                 </div>
-                <div class="fui-cell-group fui-cell-click" style="margin-top: 0">
+                <div class="fui-cell-group fui-cell-click" style="margin-top: 0" id="sharearea">
                     <a class="fui-cell">
                         <div class="fui-cell-icon">
                             <i class="wechat"></i>
@@ -54,7 +54,23 @@
                 </div>
 
             </div>
+            <div id="showsharebox" style="display: none;">
+                <div class="img"></div>
+            </div>            
         </div>
     </div>
+<script type="text/javascript">
+$(function(){
+    $("#sharearea a").each(function(){
+        $(this).on("click",function(){
+            $("#showsharebox").show();
+        })
+    });
+
+    $("#showsharebox").on("click",function(){
+        $(this).hide();
+    });
+});
+</script>
 </body>
 </html>
